@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ADC Rwanda | Empowering African Businesses for Sustainable Growth</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="about.css" />
   <link rel="stylesheet" href="home.css" />
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.php" class="brand">
+      <a href="index.html" class="brand">
         <img src="logo.png" alt="ADC Rwanda logo" class="brand-logo" />
         <span class="brand-text">
           <span class="brand-name">Africa Development Consultant(ADC)</span>
@@ -26,7 +25,7 @@
 
       <nav class="site-nav">
         <ul>
-          <li><a href="index.php" class="active">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li class="has-dropdown">
             <a href="about.html">About</a>
             <ul class="dropdown">
@@ -64,9 +63,8 @@
 
       <div class="container hero-content-grid">
         <div class="hero-main">
-          <!--<span class="hero-badge">🌍 Africa Development Consultant</span>-->
           <h1 class="hero-title">
-            Supporting <span class="gradient-text">Micro-small and Medium Enterprises</span>  Grow Sustainably
+            Supporting <span class="gradient-text">Micro-small and Medium Enterprises</span> Grow Sustainably
           </h1>
           <p class="hero-description">
             ADC collaborates with government institutions, development partners, and private sector leaders to provide Business Development Services (BDS) and technical assistance to MSMEs across all stages of their business growth.
@@ -80,11 +78,6 @@
           </div>
           <div class="hero-trust">
             <span class="trust-text" style="font-size:20px;"> <span style="color:orange;">ADC</span> Trusted Partner for Sustainable Business Growth.</span>
-            <div class="trust-logos">
-              <!--<div class="trust-logo">USADF</div>-->
-              <!--<div class="trust-logo">AGRA</div>-->
-              <!--<div class="trust-logo">UN</div>-->
-            </div>
           </div>
         </div>
 
@@ -106,15 +99,6 @@
           <div class="impact-card">
             <div class="impact-icon">
                  <img src="images/cooperative.jfif" alt="" class="impact-img">
-                 
-                 <style>
-                     .impact-img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50%; /* optional: makes it circular */
-}
-                 </style>
             </div>
             <div class="impact-number counter" data-target="100">0</div>
             <div class="impact-label">Agricultural cooperative supported</div>
@@ -134,129 +118,110 @@
       </div>
     </section>
 
-    <!-- Impact Map Section -->
-     <section class="impact-map-section">
+    <!-- Impact Section with Image Slideshows -->
+    <section class="impact-section">
       <div class="container">
         <div class="section-header centered">
           <h2>Our Impact</h2>
           <p>Working across Rwanda and the continent to support resilient, inclusive growth</p>
         </div>
 
-        <div class="map-container">
-          <div class="map-visual">
-            <svg viewBox="0 0 120 80" aria-label="Map of Africa">
-              <defs>
-                <!-- Clip path for Rwanda map -->
-                <clipPath id="rwandaClip">
-                  <path d="M40 28 L72 30 L90 45 L86 65 L55 60 L38 50 Z" />
-                </clipPath>
-                
-                <!-- Gradient for the East Africa region -->
-                <linearGradient id="rwandaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#0f4c81;stop-opacity:0.9" />
-                  <stop offset="100%" style="stop-color:#2196F3;stop-opacity:0.8" />
-                </linearGradient>
-
-                <!-- Pattern for texture -->
-                <pattern id="mapPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-                  <circle cx="5" cy="5" r="0.5" fill="rgba(251, 191, 36, 0.2)"/>
-                </pattern>
-              </defs>
-              
-              <!-- North Africa -->
-              <path class="map-region" data-region="north"
-                d="M20 10 L60 5 L80 15 L70 30 L40 28 Z" />
-
-              <!-- West Africa -->
-              <path class="map-region" data-region="west"
-                d="M10 20 L40 28 L38 50 L18 55 L8 38 Z" />
-
-              <!-- East Africa (with Rwanda) -->
-              <g class="map-region-group active" data-region="east">
-                <path class="map-region-base" data-region="east"
-                  d="M40 28 L72 30 L90 45 L86 65 L55 60 L38 50 Z" />
-                
-                <!-- Rwanda overlay with image -->
-                <image
-                  href="images/rwanda-map.jpg"
-                  x="40"
-                  y="28"
-                  width="50"
-                  height="37"
-                  clip-path="url(#rwandaClip)"
-                  preserveAspectRatio="xMidYMid slice"
-                  opacity="0.85"
-                  class="rwanda-map-image"
-                />
-                
-                <!-- Border highlight for Rwanda region -->
-                <path class="rwanda-border" 
-                  d="M40 28 L72 30 L90 45 L86 65 L55 60 L38 50 Z"
-                  fill="none"
-                  stroke="url(#rwandaGradient)"
-                  stroke-width="1.5"
-                  stroke-linejoin="round"
-                />
-              </g>
-
-              <!-- South Africa -->
-              <path class="map-region" data-region="south"
-                d="M18 55 L38 50 L55 60 L52 75 L28 72 Z" />
-
-              <!-- Marker for Kigali -->
-              <g class="map-marker-group">
-                <circle cx="64" cy="46" r="4" class="map-marker-glow" />
-                <circle cx="64" cy="46" r="2.5" class="map-marker pulse" />
-                <circle cx="64" cy="46" r="1" class="map-marker-center" />
-              </g>
-
-              <!-- Location label -->
-              <text x="64" y="54" class="map-location-label" text-anchor="middle">Kigali</text>
-            </svg>
-
-            <!-- Map legend -->
-            <div class="map-legend">
-              <div class="legend-item">
-                <div class="legend-color" style="background: url(#rwandaGradient);"></div>
-                <span>Active Region</span>
+        <div class="impact-cards-grid">
+          <!-- Card 1: Agricultural Cooperatives -->
+          <div class="impact-card-slideshow">
+            <div class="slideshow-container">
+              <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?w=800&auto=format&fit=crop');"></div>
+              <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop');"></div>
+              <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&auto=format&fit=crop');"></div>
+              <div class="slide-overlay"></div>
+              <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
               </div>
-              <div class="legend-item">
-                <div class="legend-marker"></div>
-                <span>Headquarters</span>
-              </div>
+            </div>
+            <div class="impact-card-content">
+              <div class="impact-icon">🌾</div>
+              <h3>Building Capacity and Expanding Access Through USADF</h3>
+              <p>Through 14 Cooperative Agreements (CAs) with the United States African Development Foundation (USADF)...</p>
+              <button class="read-more-btn" data-modal="modal1">
+                Read More
+                <span class="btn-icon">→</span>
+              </button>
             </div>
           </div>
 
-          <div class="map-info-cards">
-            <div class="map-info-card active" data-region="east">
-              <div class="card-icon">🌟</div>
-              <h3>East Africa & Great Lakes</h3>
-              <p>Deep portfolio in agribusiness, renewable energy, and MSME finance</p>
-              <div class="card-stat">
-                <div class="stat-item">
-                  <span class="stat-value">80+</span>
-                  <span class="stat-label">Active Projects</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-value">5</span>
-                  <span class="stat-label">Countries</span>
-                </div>
+          <!-- Card 2: Youth Empowerment -->
+          <div class="impact-card-slideshow">
+            <div class="slideshow-container">
+              <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&auto=format&fit=crop');"></div>
+              <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop');"></div>
+              <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop');"></div>
+              <div class="slide-overlay"></div>
+              <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
               </div>
             </div>
-            
-            <div class="map-info-card" data-region="north">
-              <div class="card-icon">🌾</div>
-              <h3>Alliance for Green Revolution in Africa (AGRA)</h3>
-              <p>Business Development Services for women agribusinesses and youth employment</p>
+            <!-- 🎓 -->
+            <div class="impact-card-content">
+              <div class="impact-icon"> 🧭</div>
+              <h3>Business Planning as a Pathway to Inclusive Growth</h3>
+              <p>Developed business plans on behalf of Rwanda Dairy Development Project (RDDP)...</p>
+              <button class="read-more-btn" data-modal="modal2">
+                Read More
+                <span class="btn-icon">→</span>
+              </button>
             </div>
-            
-            <div class="map-info-card" data-region="west">
-              <div class="card-icon">🤝</div>
-              <h3>United States African Development Foundation</h3>
-              <p>Country Partner under various cooperative agreements (2007-2025)</p>
+          </div>
+
+          <!-- Card 3: Projects Delivered -->
+          <div class="impact-card-slideshow">
+            <div class="slideshow-container">
+              <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop');"></div>
+              <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop');"></div>
+              <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&auto=format&fit=crop');"></div>
+              <div class="slide-overlay"></div>
+              <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
             </div>
-            
-           
+            <div class="impact-card-content">
+              <div class="impact-icon">📊</div>
+              <h3>145+ Projects Delivered</h3>
+              <p>Successful implementation of development initiatives across agriculture, energy, finance, and capacity building sectors...</p>
+              <button class="read-more-btn" data-modal="modal3">
+                Read More
+                <span class="btn-icon">→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Regional Reach -->
+          <div class="impact-card-slideshow">
+            <div class="slideshow-container">
+              <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&auto=format&fit=crop');"></div>
+              <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1488229297570-58520851e868?w=800&auto=format&fit=crop');"></div>
+              <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&auto=format&fit=crop');"></div>
+              <div class="slide-overlay"></div>
+              <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="impact-card-content">
+              <div class="impact-icon">🌍</div>
+              <h3>Operating Across 5 Countries</h3>
+              <p>Deep portfolio in agribusiness, renewable energy, and MSME finance throughout East Africa and the Great Lakes region...</p>
+              <button class="read-more-btn" data-modal="modal4">
+                Read More
+                <span class="btn-icon">→</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -375,7 +340,6 @@
     </section>
 
     <!-- Testimonials -->
-     <!-- Testimonials -->
     <section class="testimonials-section">
       <div class="container">
         <div class="section-header centered">
@@ -383,7 +347,7 @@
         </div>
 
         <div class="testimonials-wrapper">
-          <div class="testimonial-card" data-index="0">
+          <div class="testimonial-card active" data-index="0">
             <div class="quote-icon">"</div>
             <p class="testimonial-text">
               Coproriz Ntende Cooperative's poultry journey began uncertainly but flourished with ADC's guidance.
@@ -393,7 +357,7 @@
             </p>
             <div class="testimonial-author">
               <div class="author-name">Dr HABAGUHIRWA Ange Girbert</div>
-              <div class="author-org">Veterinary officer – angegilbert767@gmail.com</div>
+              <div class="author-org">Veterinary officer</div>
             </div>
           </div>
 
@@ -401,39 +365,36 @@
             <div class="quote-icon">"</div>
             <p class="testimonial-text">
               As a result of Covid 19, COPRORIZ-NTENDE Cooperative experienced a crisis like other commercial
-establishments, but in partnership with ADC, we were able to obtain a 20m grant aimed at boosting the
-Cooperative performance in the operations following donor assessment of Cooperative resilient during
-the crises. This could not have been achieved if it was not ADC support in establishing sustainable
-financial and operations systems. If we had worked with ADC to provide us with this information, our
-economy would have been severely disrupted
+              establishments, but in partnership with ADC, we were able to obtain a 20m grant aimed at boosting the
+              Cooperative performance in the operations following donor assessment of Cooperative resilient during
+              the crises. This could not have been achieved if it was not ADC support in establishing sustainable
+              financial and operations systems.
             </p>
             <div class="testimonial-author">
               <div class="author-name">SINZAMUHARA Jean de Dieu</div>
-              <div class="author-org">Director - coprori@yahoo.fr</div>
+              <div class="author-org">Director</div>
             </div>
           </div>
     
-         <div class="testimonial-card" data-index="1">
+          <div class="testimonial-card" data-index="2">
             <div class="quote-icon">"</div>
             <p class="testimonial-text">
-              ADC’s financial advisory and training were game-changers. We now run QuickBooks Online with clear,
-accurate data, boosting efficiency and compliance. This transformation empowers smarter decisions and
-stronger profitability. Thank you, ADC, for turning our financial management into a true driver of
-success.
+              ADC's financial advisory and training were game-changers. We now run QuickBooks Online with clear,
+              accurate data, boosting efficiency and compliance. This transformation empowers smarter decisions and
+              stronger profitability. Thank you, ADC, for turning our financial management into a true driver of
+              success.
             </p>
             <div class="testimonial-author">
               <div class="author-name">NSHIMYIMANA Ernest</div>
-              <div class="author-org">Managing Director/ Dukunde Kawa Musasa Cooperative - ernest@dukundekawa.rw</div>
+              <div class="author-org">Managing Director/ Dukunde Kawa Musasa Cooperative</div>
             </div>
           </div>
         </div>
-            </div>
 
         <div class="testimonial-dots">
           <button class="dot active" data-testimonial="0"></button>
           <button class="dot" data-testimonial="1"></button>
-        <button class="dot" data-testimonial="2"></button>
-            
+          <button class="dot" data-testimonial="2"></button>
         </div>
       </div>
     </section>
@@ -461,7 +422,9 @@ success.
               <div class="partner-card-mini">
                 <div class="partner-logo-mini">
                   <div class="logo-circle agra">
-                    <span class="logo-text">AGRA</span>
+                    <span class="logo-text">
+                      <img src="images/agra.jpg" alt="">
+                    </span>
                   </div>
                 </div>
                 <h4>Alliance for Green Revolution in Africa</h4>
@@ -472,7 +435,9 @@ success.
               <div class="partner-card-mini">
                 <div class="partner-logo-mini">
                   <div class="logo-circle aceli">
-                    <span class="logo-text">AA</span>
+                    <span class="logo-text">
+                      <img src="images/aceli.jpg" width="100%" height="100%" alt="">
+                    </span>
                   </div>
                 </div>
                 <h4>Aceli Africa</h4>
@@ -483,7 +448,9 @@ success.
               <div class="partner-card-mini">
                 <div class="partner-logo-mini">
                   <div class="logo-circle usadf">
-                    <span class="logo-text">USADF</span>
+                    <span class="logo-text">
+                      <img src="images/usadf.jpg" alt="">
+                    </span>
                   </div>
                 </div>
                 <h4>United States African Development Foundation</h4>
@@ -494,7 +461,9 @@ success.
               <div class="partner-card-mini">
                 <div class="partner-logo-mini">
                   <div class="logo-circle minagri">
-                    <span class="logo-text">MA</span>
+                    <span class="logo-text">
+                      <img src="images/minagri.jpg" alt="">
+                    </span>
                   </div>
                 </div>
                 <h4>Ministry of Agriculture (MINAGRI)</h4>
@@ -505,7 +474,9 @@ success.
               <div class="partner-card-mini">
                 <div class="partner-logo-mini">
                   <div class="logo-circle naeb">
-                    <span class="logo-text">NAEB</span>
+                    <span class="logo-text">
+                      <img src="images/naeb.jpg" alt="">
+                    </span>
                   </div>
                 </div>
                 <h4>National Agricultural Export Board</h4>
@@ -516,7 +487,9 @@ success.
               <div class="partner-card-mini">
                 <div class="partner-logo-mini">
                   <div class="logo-circle rab">
-                    <span class="logo-text">RAB</span>
+                    <span class="logo-text">
+                      <img src="images/rab.jpg" alt="RAB Logo" style="width: 60px; height: auto;">
+                    </span>
                   </div>
                 </div>
                 <h4>Rwanda Agriculture Board</h4>
@@ -527,7 +500,8 @@ success.
               <div class="partner-card-mini">
                 <div class="partner-logo-mini">
                   <div class="logo-circle rti">
-                    <span class="logo-text">RTI</span>
+                    <span class="logo-text">
+                      <img src="images/rti.jpg" alt=""></span>
                   </div>
                 </div>
                 <h4>RTI International</h4>
@@ -595,6 +569,256 @@ success.
     </section>
   </main>
 
+  <!-- Impact Modals -->
+  <div class="modal-overlay" id="modalOverlay">
+    <!-- Modal 1: Agricultural Cooperatives -->
+    <div class="modal" id="modal1">
+      <div class="modal-header">
+        <div class="modal-icon">🌾</div>
+        <h2>Building Capacity and Expanding Access Through USADF</h2>
+        <button class="modal-close" data-modal="modal1">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-stats">
+          <div class="modal-stat">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Cooperatives</span>
+          </div>
+         
+          <div class="modal-stat">
+            <span class="stat-number">5,000+</span>
+            <span class="stat-label">Farmers Impacted</span>
+          </div>
+        </div>
+        
+        <h3>Partnership with USADF</h3>
+        <p>Through 14 Cooperative Agreements (CAs) with the United States African Development Foundation (USADF), ADC has supported MSMEs and more than 100 agricultural cooperatives in project development, enabling them to access grants and, in some cases, secure follow-on financing from financial institutions. 
+Well-versed in managing a diverse portfolio, ADC has further implemented Power Africa programs to advance USADF Off-Grid Energy Initiatives; Implemented the Young African Leaders Initiative (YALI) and the Academy for Women Entrepreneurs (AWE), not only in accessing grants, but also in capacity building and monitoring services.</p>
+        
+        <!-- <h3>Comprehensive Support Services</h3>
+        <p>ADC has also provided project monitoring services and implemented Power Africa programs to advance USADF Off-Grid Energy Initiatives. Our approach ensures that cooperatives not only receive financial support but also develop the capacity to manage and grow their operations sustainably.</p>
+        
+        <h3>Youth Empowerment Platforms</h3>
+        <p>Well-versed in managing a diverse portfolio, ADC has further strengthened youth capacity by providing small grants under two platforms:</p>
+        <ul>
+          <li><strong>Young African Leaders Initiative (YALI)</strong> - Supporting emerging leaders with entrepreneurial skills and resources</li>
+          <li><strong>Academy for Women Entrepreneurs (AWE)</strong> - Empowering women-led businesses with training and capital</li>
+        </ul> -->
+        
+        <!-- <h3>Key Impact Areas</h3>
+        <div class="impact-areas">
+          <div class="impact-area">
+            <span class="area-icon">💰</span>
+            <span class="area-text">Grant Access & Financing</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">📈</span>
+            <span class="area-text">Project Monitoring</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">⚡</span>
+            <span class="area-text">Off-Grid Energy</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">🎯</span>
+            <span class="area-text">Capacity Building</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Modal 2: Youth Training -->
+    <div class="modal" id="modal2">
+      <div class="modal-header">
+        <div class="modal-icon">🧭</div>
+        <h2>Business Planning as a Pathway to Inclusive Growth</h2>
+        <button class="modal-close" data-modal="modal2">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-stats">
+          <div class="modal-stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-labels" style="font-size: 12px;">Rwanda Dairy Development Project (RDDP)</span>
+          </div>
+          <div class="modal-stat">
+            <span class="stat-number">85+</span>
+            <span class="stat-labels" style="font-size: 12px;">Post-Harvest and Agribusiness Support Project (PASP)</span>
+          </div>
+          <div class="modal-stat">
+            <span class="stat-number">600+</span>
+            <span class="stat-labels" style="font-size: 12px;">Project for Rural Income through Exports (PRICE)</span>
+          </div>
+        </div>
+        
+        <h3> Our Impact</h3>
+        <p>
+          Developed business plans on behalf of Rwanda Dairy Development Project (RDDP) beneficiaries, enabling more than 50 smallholder farmers to access financial services through matching grants.
+
+Prepared business plans for Post-Harvest and Agribusiness Support Project (PASP) beneficiaries, facilitating access to financial services for over 85 agribusinesses.
+
+Supported the Project for Rural Income through Exports (PRICE) by developing business plans that helped more than 600 smallholder farmers gain access to financial services.
+        </p>
+        
+        <!-- <h3>Key Training Areas</h3>
+        <ul>
+          <li><strong>Business Management</strong> - Strategic planning, operations, and growth strategies</li>
+          <li><strong>Financial Literacy</strong> - Budgeting, bookkeeping, and financial planning</li>
+          <li><strong>Digital Skills</strong> - E-commerce, social media marketing, and online presence</li>
+          <li><strong>Leadership Development</strong> - Team management, communication, and decision-making</li>
+          <li><strong>Market Access</strong> - Value chain integration and market linkages</li>
+        </ul> -->
+        
+        <!-- <h3>Success Stories</h3>
+        <p>Our Youth Enterprise Accelerator has successfully supported over 200 youth-led businesses, helping them scale operations and attract
+           investment. Many participants have gone on to create jobs and contribute significantly to their local economies.</p>
+         -->
+        <!-- <div class="impact-areas">
+          <div class="impact-area">
+            <span class="area-icon">💼</span>
+            <span class="area-text">Business Skills</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">💰</span>
+            <span class="area-text">Financial Literacy</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">🤝</span>
+            <span class="area-text">Mentorship</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">🚀</span>
+            <span class="area-text">Growth Support</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Modal 3: Projects Delivered -->
+    <div class="modal" id="modal3">
+      <div class="modal-header">
+        <div class="modal-icon">📊</div>
+        <h2>Projects Delivered</h2>
+        <button class="modal-close" data-modal="modal3">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-stats">
+          <div class="modal-stat">
+            <span class="stat-number">145+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="modal-stat">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Sectors</span>
+          </div>
+          <div class="modal-stat">
+            <span class="stat-number">18</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+        
+        <h3>Diverse Portfolio</h3>
+        <p>With over 145 successfully implemented projects, ADC has demonstrated excellence in delivering development initiatives across multiple sectors. Our track record spans agriculture, renewable energy, financial services, and capacity building.</p>
+        
+        <h3>Project Categories</h3>
+        <ul>
+          <li><strong>Agricultural Development</strong> - Cooperative strengthening, value chain development, and market access</li>
+          <li><strong>Renewable Energy</strong> - Off-grid solar solutions and mini-grid implementation</li>
+          <li><strong>Financial Inclusion</strong> - MSME financing, financial literacy, and investment readiness</li>
+          <li><strong>Capacity Building</strong> - Institutional strengthening and skills development</li>
+          <li><strong>Monitoring & Evaluation</strong> - Results frameworks and impact assessment</li>
+        </ul>
+        
+        <h3>Impact Highlights</h3>
+        <p>Our projects have touched thousands of lives, creating sustainable livelihoods and fostering economic growth. From smallholder farmers accessing markets to youth entrepreneurs launching successful businesses, ADC's impact is measurable and transformative.</p>
+        
+        <div class="impact-areas">
+          <div class="impact-area">
+            <span class="area-icon">🌾</span>
+            <span class="area-text">Agriculture</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">⚡</span>
+            <span class="area-text">Energy</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">💼</span>
+            <span class="area-text">Finance</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">📚</span>
+            <span class="area-text">Capacity Building</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: Regional Reach -->
+    <div class="modal" id="modal4">
+      <div class="modal-header">
+        <div class="modal-icon">🌍</div>
+        <h2>Regional Reach & Partnerships</h2>
+        <button class="modal-close" data-modal="modal4">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-stats">
+          <div class="modal-stat">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Countries</span>
+          </div>
+          <div class="modal-stat">
+            <span class="stat-number">80+</span>
+            <span class="stat-label">Active Projects</span>
+          </div>
+          <div class="modal-stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Partner Organizations</span>
+          </div>
+        </div>
+        
+        <h3>East Africa & Great Lakes Region</h3>
+        <p>ADC operates across five countries in the East Africa and Great Lakes region, with a deep portfolio in agribusiness, renewable energy, and MSME finance. Our regional presence allows us to understand local contexts while leveraging cross-border opportunities.</p>
+        
+        <h3>Countries of Operation</h3>
+        <ul>
+          <li><strong>Rwanda</strong> - Headquarters and primary operations hub</li>
+          <li><strong>Burundi</strong> - Agricultural development and cooperative support</li>
+          <li><strong>Uganda</strong> - Youth entrepreneurship and financial inclusion</li>
+          <li><strong>Tanzania</strong> - Market development and value chain integration</li>
+          <li><strong>Democratic Republic of Congo</strong> - Capacity building and institutional support</li>
+        </ul>
+        
+        <h3>Key Partnerships</h3>
+        <p>We collaborate with leading international organizations, government agencies, and private sector partners to maximize our impact:</p>
+        <ul>
+          <li>United States African Development Foundation (USADF)</li>
+          <li>Alliance for Green Revolution in Africa (AGRA)</li>
+          <li>Aceli Africa</li>
+          <li>Rwanda Ministry of Agriculture (MINAGRI)</li>
+          <li>National Agricultural Export Board (NAEB)</li>
+        </ul>
+        
+        <div class="impact-areas">
+          <div class="impact-area">
+            <span class="area-icon">🌾</span>
+            <span class="area-text">Agribusiness</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">⚡</span>
+            <span class="area-text">Renewable Energy</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">💼</span>
+            <span class="area-text">MSME Finance</span>
+          </div>
+          <div class="impact-area">
+            <span class="area-icon">🤝</span>
+            <span class="area-text">Partnerships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
@@ -633,275 +857,6 @@ success.
     </div>
   </footer>
 
-  <script>
-    // Navigation
-    const navToggle = document.querySelector('.nav-toggle');
-    const siteNav = document.querySelector('.site-nav');
-    navToggle?.addEventListener('click', () => {
-      siteNav.classList.toggle('open');
-      navToggle.classList.toggle('open');
-    });
-
-    // Theme toggle
-    const themeToggle = document.getElementById('themeToggle');
-    const storedTheme = localStorage.getItem('adc-theme');
-    if (storedTheme === 'dark') document.documentElement.classList.add('dark');
-    themeToggle?.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      const isDark = document.documentElement.classList.contains('dark');
-      localStorage.setItem('adc-theme', isDark ? 'dark' : 'light');
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Hero slideshow
-    let heroSlideIndex = 0;
-    const heroSlides = document.querySelectorAll('.hero-slide');
-    const heroDots = document.querySelectorAll('.hero-slide-dots .dot');
-
-    function showHeroSlide(n) {
-      heroSlides.forEach(slide => slide.classList.remove('active'));
-      heroDots.forEach(dot => dot.classList.remove('active'));
-      
-      if (n >= heroSlides.length) heroSlideIndex = 0;
-      if (n < 0) heroSlideIndex = heroSlides.length - 1;
-      
-      heroSlides[heroSlideIndex].classList.add('active');
-      heroDots[heroSlideIndex].classList.add('active');
-    }
-
-    function setHeroSlide(n) {
-      heroSlideIndex = n;
-      showHeroSlide(heroSlideIndex);
-    }
-
-    function nextHeroSlide() {
-      heroSlideIndex++;
-      showHeroSlide(heroSlideIndex);
-    }
-
-    setInterval(nextHeroSlide, 5000);
-
-    // Counters
-    const counters = document.querySelectorAll('.counter');
-    const animateCounters = () => {
-      counters.forEach(counter => {
-        const updateCount = () => {
-          const target = +counter.getAttribute('data-target');
-          const count = +counter.innerText;
-          const inc = Math.ceil(target / 100);
-          if (count < target) {
-            counter.innerText = count + inc;
-            setTimeout(updateCount, 20);
-          } else {
-            counter.innerText = target.toLocaleString();
-          }
-        };
-        updateCount();
-      });
-    };
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounters();
-          observer.disconnect();
-        }
-      });
-    });
-    
-    const heroStats = document.querySelector('.hero-stats-container');
-    if (heroStats) observer.observe(heroStats);
-
-    // Map interaction
-    const mapRegions = document.querySelectorAll('.map-region');
-    const mapRegionGroups = document.querySelectorAll('.map-region-group');
-    const mapCards = document.querySelectorAll('.map-info-card');
-
-    mapCards.forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        const region = card.dataset.region;
-        
-        // Update regions
-        mapRegions.forEach(r => {
-          if (r.dataset.region === region) {
-            r.classList.add('active');
-          } else {
-            r.classList.remove('active');
-          }
-        });
-        
-        // Update region groups
-        mapRegionGroups.forEach(g => {
-          if (g.dataset.region === region) {
-            g.classList.add('active');
-          } else {
-            g.classList.remove('active');
-          }
-        });
-        
-        // Update cards
-        mapCards.forEach(c => {
-          if (c === card) {
-            c.classList.add('active');
-          } else {
-            c.classList.remove('active');
-          }
-        });
-      });
-    });
-
-    // Projects carousel
-    const track = document.querySelector('.projects-track');
-    const projectCards = document.querySelectorAll('.project-card');
-    let projectIndex = 0;
-
-    function updateProjectSlide() {
-      const width = projectCards[0].offsetWidth + 32;
-      track.style.transform = `translateX(-${projectIndex * width}px)`;
-    }
-
-    document.getElementById('projectPrev')?.addEventListener('click', () => {
-      projectIndex = (projectIndex - 1 + projectCards.length) % projectCards.length;
-      updateProjectSlide();
-    });
-
-    document.getElementById('projectNext')?.addEventListener('click', () => {
-      projectIndex = (projectIndex + 1) % projectCards.length;
-      updateProjectSlide();
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-
-  const testimonialCards = document.querySelectorAll('.testimonial-card');
-  const testimonialDots = document.querySelectorAll('.testimonial-dots .dot');
-  const testimonialsWrapper = document.querySelector('.testimonials-wrapper');
-
-  let testimonialIndex = 0;
-  let testimonialAutoPlay = null;
-  const INTERVAL_TIME = 6000;
-
-  function showTestimonial(index) {
-    testimonialIndex = (index + testimonialCards.length) % testimonialCards.length;
-
-    testimonialCards.forEach((card, i) => {
-      card.classList.remove('active', 'previous');
-
-      if (i === testimonialIndex) {
-        card.classList.add('active');
-      } else if (i === (testimonialIndex - 1 + testimonialCards.length) % testimonialCards.length) {
-        card.classList.add('previous');
-      }
-    });
-
-    testimonialDots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === testimonialIndex);
-    });
-  }
-
-  function startAutoplay() {
-    stopAutoplay();
-    testimonialAutoPlay = setInterval(() => {
-      showTestimonial(testimonialIndex + 1);
-    }, INTERVAL_TIME);
-  }
-
-  function stopAutoplay() {
-    if (testimonialAutoPlay) {
-      clearInterval(testimonialAutoPlay);
-      testimonialAutoPlay = null;
-    }
-  }
-
-  testimonialDots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      showTestimonial(index);
-      startAutoplay();
-    });
-  });
-
-  testimonialsWrapper.addEventListener('mouseenter', stopAutoplay);
-  testimonialsWrapper.addEventListener('mouseleave', startAutoplay);
-
-  // Init
-  showTestimonial(0);
-  startAutoplay();
-
-});
-
-    // Partners carousel
-    const partnersTrack = document.querySelector('.partners-track');
-    const partnerCards = document.querySelectorAll('.partner-card-mini');
-    const partnerIndicatorsContainer = document.getElementById('partnerIndicators');
-    let partnerIndex = 0;
-
-    function getCardsToShow() {
-      if (window.innerWidth >= 1024) return 4;
-      if (window.innerWidth >= 768) return 3;
-      if (window.innerWidth >= 480) return 2;
-      return 1;
-    }
-
-    function createPartnerIndicators() {
-      partnerIndicatorsContainer.innerHTML = '';
-      const cardsToShow = getCardsToShow();
-      const numPages = Math.ceil(partnerCards.length / cardsToShow);
-      
-      for (let i = 0; i < numPages; i++) {
-        const indicator = document.createElement('div');
-        indicator.classList.add('partner-indicator');
-        if (i === 0) indicator.classList.add('active');
-        indicator.addEventListener('click', () => goToPartnerPage(i));
-        partnerIndicatorsContainer.appendChild(indicator);
-      }
-    }
-
-    function updatePartnersSlide() {
-      const cardsToShow = getCardsToShow();
-      const cardWidth = partnerCards[0].offsetWidth;
-      const gap = 24;
-      const offset = partnerIndex * cardsToShow * (cardWidth + gap);
-      partnersTrack.style.transform = `translateX(-${offset}px)`;
-
-      const indicators = document.querySelectorAll('.partner-indicator');
-      indicators.forEach((ind, idx) => {
-        ind.classList.toggle('active', idx === partnerIndex);
-      });
-    }
-
-    function goToPartnerPage(page) {
-      const cardsToShow = getCardsToShow();
-      const maxIndex = Math.ceil(partnerCards.length / cardsToShow) - 1;
-      partnerIndex = Math.max(0, Math.min(page, maxIndex));
-      updatePartnersSlide();
-    }
-
-    document.getElementById('partnerPrev')?.addEventListener('click', () => {
-      const cardsToShow = getCardsToShow();
-      const maxIndex = Math.ceil(partnerCards.length / cardsToShow) - 1;
-      partnerIndex = partnerIndex > 0 ? partnerIndex - 1 : maxIndex;
-      updatePartnersSlide();
-    });
-
-    document.getElementById('partnerNext')?.addEventListener('click', () => {
-      const cardsToShow = getCardsToShow();
-      const maxIndex = Math.ceil(partnerCards.length / cardsToShow) - 1;
-      partnerIndex = partnerIndex < maxIndex ? partnerIndex + 1 : 0;
-      updatePartnersSlide();
-    });
-
-    createPartnerIndicators();
-    window.addEventListener('resize', () => {
-      createPartnerIndicators();
-      updatePartnersSlide();
-    });
-
-    setInterval(() => {
-      const cardsToShow = getCardsToShow();
-      const maxIndex = Math.ceil(partnerCards.length / cardsToShow) - 1;
-      partnerIndex = partnerIndex < maxIndex ? partnerIndex + 1 : 0;
-      updatePartnersSlide();
-    }, 4000);
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
