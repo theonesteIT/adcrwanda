@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADC Rwanda | Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="admin-body">
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="admin-brand">
+        <div class="admin-logo">ADC</div>
+        <div class="admin-brand-text">
+          <span>ADC Rwanda</span>
+          <small>Admin Console</small>
+        </div>
+      </div>
+      <nav class="admin-nav">
+        <div class="admin-nav-section-title">Overview</div>
+        <a href="#" class="active">Dashboard</a>
+        <a href="#users">Users &amp; Roles</a>
+        <a href="#cms">Website Content</a>
+        <a href="#staff">Staff &amp; Board</a>
+        <a href="#services">Services</a>
+        <a href="#events">Events</a>
+        <a href="#clients">Clients &amp; Inquiries</a>
+        <a href="#projects">Projects</a>
+        <a href="#me">Monitoring &amp; Evaluation</a>
+        <a href="#finance">Finance</a>
+        <a href="#comms">Communication</a>
+        <a href="#files">Files</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#security">Security</a>
+        <a href="#settings">Settings</a>
+        <a href="#ai">AI &amp; Automation</a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <p>High-level overview of ADC Rwanda’s digital operations.</p>
+        </div>
+        <div class="admin-header-actions">
+          <button class="btn btn-outline">Preview website</button>
+          <button class="btn btn-primary">New item</button>
+        </div>
+      </header>
+
+      <!-- KPI cards -->
+      <section class="admin-section">
+        <h2 class="admin-section-title">Key Metrics</h2>
+        <div class="admin-kpi-grid">
+          <article class="admin-kpi-card">
+            <span class="label">Total visitors</span>
+            <strong>28,450</strong>
+            <span class="trend positive">+14% vs last month</span>
+          </article>
+          <article class="admin-kpi-card">
+            <span class="label">Total inquiries</span>
+            <strong>312</strong>
+            <span class="trend positive">+8% conversion</span>
+          </article>
+          <article class="admin-kpi-card">
+            <span class="label">Active projects</span>
+            <strong>24</strong>
+            <span class="trend neutral">On track</span>
+          </article>
+          <article class="admin-kpi-card">
+            <span class="label">Upcoming events</span>
+            <strong>5</strong>
+            <span class="trend neutral">Next in 7 days</span>
+          </article>
+          <article class="admin-kpi-card">
+            <span class="label">Registered clients</span>
+            <strong>184</strong>
+            <span class="trend positive">+12 new this week</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Charts + activity -->
+      <section class="admin-section admin-section-grid">
+        <div class="admin-card">
+          <h3>Website traffic</h3>
+          <div class="chart-placeholder">Traffic chart placeholder</div>
+        </div>
+        <div class="admin-card">
+          <h3>Service requests</h3>
+          <div class="chart-placeholder">Service requests chart placeholder</div>
+        </div>
+        <div class="admin-card">
+          <h3>Event registrations</h3>
+          <div class="chart-placeholder">Event registrations chart placeholder</div>
+        </div>
+        <div class="admin-card">
+          <h3>Real-time activity</h3>
+          <ul class="activity-feed">
+            <li><strong>New inquiry</strong> from agribusiness in Rwanda.</li>
+            <li><strong>Event registration</strong> for Youth Bootcamp.</li>
+            <li><strong>Service request</strong> – Financial management advisory.</li>
+            <li><strong>New client</strong> added by Consultant.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Quick actions -->
+      <section class="admin-section">
+        <h2 class="admin-section-title">Quick actions</h2>
+        <div class="admin-actions-grid">
+          <button class="admin-action-btn">Add event</button>
+          <button class="admin-action-btn">Add service</button>
+          <button class="admin-action-btn">Add staff</button>
+          <button class="admin-action-btn">Publish news</button>
+        </div>
+      </section>
+
+      <!-- Management overview blocks -->
+      <section id="users" class="admin-section">
+        <h2 class="admin-section-title">User &amp; Role Management</h2>
+        <div class="admin-2col">
+          <div class="admin-card">
+            <h3>User types</h3>
+            <ul class="admin-list">
+              <li>Super Admin</li>
+              <li>Content Manager</li>
+              <li>Event Manager</li>
+              <li>Consultant</li>
+              <li>Finance Officer</li>
+              <li>Client</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Security &amp; permissions</h3>
+            <ul class="admin-list">
+              <li>Role-based access control</li>
+              <li>User-level permissions</li>
+              <li>Two-factor authentication</li>
+              <li>Login history &amp; activity logs</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="cms" class="admin-section">
+        <h2 class="admin-section-title">Website Content Management (CMS)</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Page management</h3>
+            <ul class="admin-list">
+              <li>Home page editor</li>
+              <li>About page editor</li>
+              <li>Services page editor</li>
+              <li>Events page editor</li>
+              <li>Contact page editor</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Content tools</h3>
+            <ul class="admin-list">
+              <li>Drag &amp; drop builder</li>
+              <li>Rich text editor</li>
+              <li>Media library</li>
+              <li>SEO settings</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Publishing</h3>
+            <ul class="admin-list">
+              <li>Drafts &amp; approvals</li>
+              <li>Scheduling</li>
+              <li>Version history</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="staff" class="admin-section">
+        <h2 class="admin-section-title">Staff &amp; Board Management</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Staff profiles</h3>
+            <ul class="admin-list">
+              <li>Add / edit / delete staff</li>
+              <li>Upload profile photos</li>
+              <li>Assign expertise areas</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Board members</h3>
+            <ul class="admin-list">
+              <li>Manage board profiles</li>
+              <li>Governance roles &amp; committees</li>
+              <li>Visibility controls</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>LinkedIn &amp; bios</h3>
+            <ul class="admin-list">
+              <li>Biography sections</li>
+              <li>Experience timelines</li>
+              <li>Profile links</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="admin-section">
+        <h2 class="admin-section-title">Services Management</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Service catalogue</h3>
+            <ul class="admin-list">
+              <li>Add service categories</li>
+              <li>Edit service descriptions</li>
+              <li>Upload brochures</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Consultant assignment</h3>
+            <ul class="admin-list">
+              <li>Assign leads per service</li>
+              <li>Track capacity</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Service requests</h3>
+            <ul class="admin-list">
+              <li>Pipeline of requests</li>
+              <li>Status tracking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="admin-section">
+        <h2 class="admin-section-title">Events Management</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Event setup</h3>
+            <ul class="admin-list">
+              <li>Create events &amp; categories</li>
+              <li>Registration forms</li>
+              <li>Ticketing options</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Attendance &amp; payments</h3>
+            <ul class="admin-list">
+              <li>Payment integration (Mobile Money, cards)</li>
+              <li>Attendance tracking</li>
+              <li>QR ticket generation</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Post-event</h3>
+            <ul class="admin-list">
+              <li>Certificates</li>
+              <li>Recordings &amp; materials</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients" class="admin-section">
+        <h2 class="admin-section-title">Client &amp; Inquiry Management</h2>
+        <div class="admin-2col">
+          <div class="admin-card">
+            <h3>Client database</h3>
+            <ul class="admin-list">
+              <li>Client profiles</li>
+              <li>Organization records</li>
+              <li>Engagement history</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Inquiries &amp; CRM</h3>
+            <ul class="admin-list">
+              <li>Lead tracking</li>
+              <li>Pipeline stages</li>
+              <li>Follow-up reminders</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="admin-section">
+        <h2 class="admin-section-title">Project Management</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Projects</h3>
+            <ul class="admin-list">
+              <li>Project creation</li>
+              <li>Assign consultants</li>
+              <li>Client linkage</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Execution</h3>
+            <ul class="admin-list">
+              <li>Milestone tracking</li>
+              <li>Task management</li>
+              <li>Document library</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Reporting</h3>
+            <ul class="admin-list">
+              <li>Client reports</li>
+              <li>Donor reporting support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="me" class="admin-section">
+        <h2 class="admin-section-title">Monitoring &amp; Evaluation</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Data collection</h3>
+            <ul class="admin-list">
+              <li>Survey builder</li>
+              <li>Field data inputs</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Analytics</h3>
+            <ul class="admin-list">
+              <li>Dashboards</li>
+              <li>Indicator tracking</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Reporting</h3>
+            <ul class="admin-list">
+              <li>Export to Excel / PDF</li>
+              <li>Donor templates</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="finance" class="admin-section">
+        <h2 class="admin-section-title">Financial &amp; Billing</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Invoices &amp; payments</h3>
+            <ul class="admin-list">
+              <li>Invoice generation</li>
+              <li>Payment tracking</li>
+              <li>Mobile Money integration</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Expenses</h3>
+            <ul class="admin-list">
+              <li>Expense categories</li>
+              <li>Approvals</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Financial reports</h3>
+            <ul class="admin-list">
+              <li>Project-level reports</li>
+              <li>Organization-level dashboards</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="comms" class="admin-section">
+        <h2 class="admin-section-title">Newsletter &amp; Communication</h2>
+        <div class="admin-2col">
+          <div class="admin-card">
+            <h3>Campaigns</h3>
+            <ul class="admin-list">
+              <li>Email campaigns</li>
+              <li>SMS alerts</li>
+              <li>WhatsApp broadcast</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Subscribers</h3>
+            <ul class="admin-list">
+              <li>Subscriber database</li>
+              <li>Segmentation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="files" class="admin-section">
+        <h2 class="admin-section-title">File &amp; Document Management</h2>
+        <div class="admin-2col">
+          <div class="admin-card">
+            <h3>Storage</h3>
+            <ul class="admin-list">
+              <li>Secure document storage</li>
+              <li>Version control</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Access &amp; backup</h3>
+            <ul class="admin-list">
+              <li>Access permissions</li>
+              <li>Cloud backup</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="analytics" class="admin-section">
+        <h2 class="admin-section-title">Analytics &amp; Reports</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Website</h3>
+            <ul class="admin-list">
+              <li>Visitors &amp; behaviour</li>
+              <li>Conversion tracking</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Clients &amp; services</h3>
+            <ul class="admin-list">
+              <li>Client analytics</li>
+              <li>Service performance</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Impact</h3>
+            <ul class="admin-list">
+              <li>Event performance</li>
+              <li>Impact reports</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="security" class="admin-section">
+        <h2 class="admin-section-title">Security &amp; Compliance</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Protection</h3>
+            <ul class="admin-list">
+              <li>SSL &amp; encryption</li>
+              <li>Firewall</li>
+              <li>Anti-spam</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Monitoring</h3>
+            <ul class="admin-list">
+              <li>Audit logs</li>
+              <li>Data backups</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Compliance</h3>
+            <ul class="admin-list">
+              <li>GDPR / data protection</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="settings" class="admin-section">
+        <h2 class="admin-section-title">System Settings</h2>
+        <div class="admin-3col">
+          <div class="admin-card">
+            <h3>Branding</h3>
+            <ul class="admin-list">
+              <li>Logo &amp; colors</li>
+              <li>Theme options</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Localization</h3>
+            <ul class="admin-list">
+              <li>Languages (EN / FR / RW)</li>
+              <li>Regional formats</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Notifications &amp; APIs</h3>
+            <ul class="admin-list">
+              <li>Email templates</li>
+              <li>Notification settings</li>
+              <li>API integrations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="ai" class="admin-section">
+        <h2 class="admin-section-title">AI &amp; Automation</h2>
+        <div class="admin-2col">
+          <div class="admin-card">
+            <h3>AI chatbot</h3>
+            <ul class="admin-list">
+              <li>Chatbot configuration</li>
+              <li>Knowledge base</li>
+              <li>Auto-reply flows</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Automation</h3>
+            <ul class="admin-list">
+              <li>Lead scoring</li>
+              <li>Smart recommendations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+

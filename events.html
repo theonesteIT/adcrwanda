@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADC Rwanda Events</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="events.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="ADC Rwanda logo" class="brand-logo" />
+        <span class="brand-text">
+          <span class="brand-name">ADC Rwanda</span>
+          <span class="brand-tagline">African Development Consultant</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="about.html">About</a>
+            <ul class="dropdown">
+              <li><a href="staff.html">Staff</a></li>
+              <li><a href="board.html">Board Members</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline" onclick="location.href='contact.html#consultation'">Get Consultation</button>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">&#9788;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="events-hero">
+      <div class="hero-slideshow">
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1500&auto=format&fit=crop');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1500&auto=format&fit=crop');">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?w=1500&auto=format&fit=crop');">
+          <div class="slide-overlay"></div>
+        </div>
+      </div>
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <span class="eyebrow">📅 Events & Trainings</span>
+          <h1>Bootcamps, trainings, conferences, and pitch days</h1>
+          <p>
+            Explore our upcoming and past events focused on entrepreneurship, agriculture,
+            renewable energy, and private sector development.
+          </p>
+          <div class="hero-actions">
+            <a href="#upcoming" class="btn btn-primary">View Events</a>
+            <a href="#register" class="btn btn-secondary">Register Now</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card">
+            <div class="card-icon">🎯</div>
+            <div class="card-text">
+              <div class="card-number">50+</div>
+              <div class="card-label">Events Hosted</div>
+            </div>
+          </div>
+          <div class="floating-card delay-1">
+            <div class="card-icon">👥</div>
+            <div class="card-text">
+              <div class="card-number">2000+</div>
+              <div class="card-label">Participants</div>
+            </div>
+          </div>
+          <div class="floating-card delay-2">
+            <div class="card-icon">🌍</div>
+            <div class="card-text">
+              <div class="card-number">15+</div>
+              <div class="card-label">Countries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide-dots">
+        <span class="dot active" onclick="setHeroSlide(0)"></span>
+        <span class="dot" onclick="setHeroSlide(1)"></span>
+        <span class="dot" onclick="setHeroSlide(2)"></span>
+      </div>
+    </section>
+
+    <!-- Event Filter -->
+    <section class="event-filter">
+      <div class="container">
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Events</button>
+          <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+          <button class="filter-btn" data-filter="past">Past</button>
+          <button class="filter-btn" data-filter="bootcamp">Bootcamps</button>
+          <button class="filter-btn" data-filter="conference">Conferences</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events-section" id="upcoming">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Upcoming Events</h2>
+          <p class="section-subtitle">Join us for these exciting opportunities</p>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card featured" data-category="upcoming bootcamp">
+            <div class="event-image" style="background: linear-gradient(135deg, #0f4c81, #2196F3);">
+              <div class="event-date-badge">
+                <div class="badge-day">15-17</div>
+                <div class="badge-month">MAR</div>
+              </div>
+              <span class="event-type-badge">In-person</span>
+            </div>
+            
+            <div class="event-content">
+              <div class="event-header">
+                <h3>Youth Entrepreneurship Bootcamp – Kigali</h3>
+                <div class="event-meta">
+                  <span class="meta-item">
+                    <span class="meta-icon">📍</span>
+                    Kigali, Rwanda
+                  </span>
+                  <span class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    3 Days
+                  </span>
+                </div>
+              </div>
+
+              <p class="event-description">
+                Intensive capacity building for early-stage, youth‑led enterprises seeking to refine
+                their business models and become investment ready.
+              </p>
+
+              <div class="event-countdown">
+                <div class="countdown-timer" data-date="2026-03-15T08:00:00">
+                  <div class="countdown-item">
+                    <span class="countdown-value" data-days>--</span>
+                    <span class="countdown-label">Days</span>
+                  </div>
+                  <div class="countdown-item">
+                    <span class="countdown-value" data-hours>--</span>
+                    <span class="countdown-label">Hours</span>
+                  </div>
+                  <div class="countdown-item">
+                    <span class="countdown-value" data-minutes>--</span>
+                    <span class="countdown-label">Minutes</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="event-actions">
+                <a href="#register" class="btn btn-primary">Register Now</a>
+                <a href="#agenda" class="btn btn-outline">View Agenda</a>
+              </div>
+
+              <div class="event-tags">
+                <span class="tag">Entrepreneurship</span>
+                <span class="tag">Youth</span>
+                <span class="tag">Investment</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-category="upcoming conference">
+            <div class="event-image" style="background: linear-gradient(135deg, #0f172a, #0e7490);">
+              <div class="event-date-badge">
+                <div class="badge-day">28</div>
+                <div class="badge-month">APR</div>
+              </div>
+              <span class="event-type-badge hybrid">Hybrid</span>
+            </div>
+            
+            <div class="event-content">
+              <div class="event-header">
+                <h3>Agri‑SME Finance Forum</h3>
+                <div class="event-meta">
+                  <span class="meta-item">
+                    <span class="meta-icon">📍</span>
+                    Hybrid Event
+                  </span>
+                  <span class="meta-item">
+                    <span class="meta-icon">⏰</span>
+                    Full Day
+                  </span>
+                </div>
+              </div>
+
+              <p class="event-description">
+                Forum bringing together agri‑SMEs, financial institutions, and development partners
+                to explore innovative financing mechanisms.
+              </p>
+
+              <div class="event-countdown">
+                <div class="countdown-timer" data-date="2026-04-28T09:00:00">
+                  <div class="countdown-item">
+                    <span class="countdown-value" data-days>--</span>
+                    <span class="countdown-label">Days</span>
+                  </div>
+                  <div class="countdown-item">
+                    <span class="countdown-value" data-hours>--</span>
+                    <span class="countdown-label">Hours</span>
+                  </div>
+                  <div class="countdown-item">
+                    <span class="countdown-value" data-minutes>--</span>
+                    <span class="countdown-label">Minutes</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="event-actions">
+                <a href="#register" class="btn btn-primary">Register Now</a>
+                <a href="#agenda" class="btn btn-outline">View Agenda</a>
+              </div>
+
+              <div class="event-tags">
+                <span class="tag">Agriculture</span>
+                <span class="tag">Finance</span>
+                <span class="tag">SME</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Events -->
+    <section class="past-events-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Past Events</h2>
+          <p class="section-subtitle">Highlights from our previous programs</p>
+        </div>
+
+        <div class="past-event-grid">
+          <article class="past-event-card" data-category="past">
+            <div class="past-event-icon">⚡</div>
+            <h3>Renewable Energy for Rural Communities</h3>
+            <p>
+              Completed training on off‑grid solutions and mini‑grids implementation for local
+              governments and developers.
+            </p>
+            <div class="past-event-stats">
+              <div class="stat">
+                <span class="stat-value">45</span>
+                <span class="stat-label">Participants</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">Dec 2025</span>
+                <span class="stat-label">Completed</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="past-event-card" data-category="past">
+            <div class="past-event-icon">🌾</div>
+            <h3>Export Readiness for Agribusinesses</h3>
+            <p>
+              Series of workshops and coaching sessions for agribusiness cooperatives entering
+              regional markets.
+            </p>
+            <div class="past-event-stats">
+              <div class="stat">
+                <span class="stat-value">60+</span>
+                <span class="stat-label">Participants</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">Nov 2025</span>
+                <span class="stat-label">Completed</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="past-event-card" data-category="past">
+            <div class="past-event-icon">💼</div>
+            <h3>Business Model Innovation Workshop</h3>
+            <p>
+              Interactive workshop on canvas methodology and lean startup principles for MSMEs
+              across East Africa.
+            </p>
+            <div class="past-event-stats">
+              <div class="stat">
+                <span class="stat-value">80+</span>
+                <span class="stat-label">Participants</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">Oct 2025</span>
+                <span class="stat-label">Completed</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Agenda -->
+    <section class="agenda-section" id="agenda">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Event Agenda</h2>
+          <p class="section-subtitle">Youth Entrepreneurship Bootcamp - Program Highlights</p>
+        </div>
+
+        <div class="agenda-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">1</div>
+            <div class="timeline-content">
+              <h3>Day 1: Foundation & Discovery</h3>
+              <ul>
+                <li>Problem–solution fit and market validation</li>
+                <li>Customer discovery and user research</li>
+                <li>Competitive analysis frameworks</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">2</div>
+            <div class="timeline-content">
+              <h3>Day 2: Financial Modeling</h3>
+              <ul>
+                <li>Revenue models and pricing strategies</li>
+                <li>Financial projections and unit economics</li>
+                <li>Investment readiness preparation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">3</div>
+            <div class="timeline-content">
+              <h3>Day 3: Pitch & Network</h3>
+              <ul>
+                <li>Pitch deck development and storytelling</li>
+                <li>Investor panel Q&A sessions</li>
+                <li>Networking with mentors and peers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration-section" id="register">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Event Registration</h2>
+          <p class="section-subtitle">Secure your spot today</p>
+        </div>
+
+        <div class="registration-wrapper">
+          <div class="registration-form">
+            <form class="modern-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="eventName">Select Event *</label>
+                  <select id="eventName" required>
+                    <option value="">Choose an event...</option>
+                    <option>Youth Entrepreneurship Bootcamp – Kigali</option>
+                    <option>Agri‑SME Finance Forum</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="attendanceMode">Attendance Mode *</label>
+                  <select id="attendanceMode" required>
+                    <option value="">Select mode...</option>
+                    <option>In-person</option>
+                    <option>Virtual</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full Name *</label>
+                  <input id="fullName" type="text" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input id="email" type="email" placeholder="john@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="org">Organization</label>
+                  <input id="org" type="text" placeholder="Your organization name" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input id="phone" type="tel" placeholder="+250 XXX XXX XXX" />
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="notes">Additional Information</label>
+                <textarea id="notes" rows="4" placeholder="Share your expectations, accessibility needs, dietary requirements, etc."></textarea>
+              </div>
+
+              <button class="btn btn-submit" type="submit">
+                <span>Complete Registration</span>
+                <span class="btn-icon">→</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="registration-info">
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <h3>Location & Access</h3>
+              <p>
+                In‑person sessions take place in Kigali, Rwanda. Virtual participants receive
+                secure video links and resources 48 hours before the event.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">📅</div>
+              <h3>Add to Calendar</h3>
+              <div class="calendar-links">
+                <a href="#" class="calendar-link">
+                  <span class="calendar-icon">G</span>
+                  Google Calendar
+                </a>
+                <a href="#" class="calendar-link">
+                  <span class="calendar-icon">O</span>
+                  Outlook
+                </a>
+                <a href="#" class="calendar-link">
+                  <span class="calendar-icon">📥</span>
+                  Download .ics
+                </a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">✉️</div>
+              <h3>Questions?</h3>
+              <p>
+                For logistics, sponsorship, or speaking opportunities, contact our events team at
+                <strong>events@adcrwanda.org</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>ADC Rwanda</h3>
+        <p>African Development Consultant Rwanda is a development consulting organization providing
+          business advisory and capacity building services across Africa.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Kigali, Rwanda</li>
+          <li>Phone: +250 000 000 000</li>
+          <li>Email: info@adcrwanda.org</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> African Development Consultant (ADC) Rwanda. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    navToggle?.addEventListener('click', () => {
+      siteNav.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const storedTheme = localStorage.getItem('adc-theme');
+    if (storedTheme === 'dark') document.documentElement.classList.add('dark');
+    themeToggle?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      localStorage.setItem('adc-theme', isDark ? 'dark' : 'light');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Event filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const eventCards = document.querySelectorAll('[data-category]');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        eventCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category.includes(filter)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Countdown timers
+    function updateCountdowns() {
+      document.querySelectorAll('.countdown-timer').forEach(timer => {
+        const dateStr = timer.getAttribute('data-date');
+        if (!dateStr) return;
+        
+        const target = new Date(dateStr).getTime();
+        const now = Date.now();
+        const diff = target - now;
+        
+        if (diff <= 0) {
+          timer.innerHTML = '<div class="countdown-expired">Event Started</div>';
+          return;
+        }
+        
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        
+        const daysEl = timer.querySelector('[data-days]');
+        const hoursEl = timer.querySelector('[data-hours]');
+        const minutesEl = timer.querySelector('[data-minutes]');
+        
+        if (daysEl) daysEl.textContent = days;
+        if (hoursEl) hoursEl.textContent = hours;
+        if (minutesEl) minutesEl.textContent = minutes;
+      });
+    }
+    
+    updateCountdowns();
+    setInterval(updateCountdowns, 60000);
+
+    // Form submission
+    document.querySelector('.modern-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you! Your registration has been received. We will send you a confirmation email shortly.');
+      e.target.reset();
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Hero slideshow
+    let heroSlideIndex = 0;
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroDots = document.querySelectorAll('.hero-slide-dots .dot');
+
+    function showHeroSlide(n) {
+      heroSlides.forEach(slide => slide.classList.remove('active'));
+      heroDots.forEach(dot => dot.classList.remove('active'));
+      
+      if (n >= heroSlides.length) heroSlideIndex = 0;
+      if (n < 0) heroSlideIndex = heroSlides.length - 1;
+      
+      heroSlides[heroSlideIndex].classList.add('active');
+      heroDots[heroSlideIndex].classList.add('active');
+    }
+
+    function setHeroSlide(n) {
+      heroSlideIndex = n;
+      showHeroSlide(heroSlideIndex);
+    }
+
+    function nextHeroSlide() {
+      heroSlideIndex++;
+      showHeroSlide(heroSlideIndex);
+    }
+
+    // Auto advance hero slides every 5 seconds
+    setInterval(nextHeroSlide, 5000);
+  </script>
+</body>
+</html>

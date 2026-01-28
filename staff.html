@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADC Rwanda Staff</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="staff.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="ADC Rwanda logo" class="brand-logo" />
+        <span class="brand-text">
+          <span class="brand-name">ADC Rwanda</span>
+          <span class="brand-tagline">African Development Consultant</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="about.html" class="active">About</a>
+            <ul class="dropdown">
+              <li><a href="staff.html" class="active">Staff</a></li>
+              <li><a href="board.html">Board Members</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline" onclick="location.href='contact.html#consultation'">Get Consultation</button>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">&#9788;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="staff-hero">
+      <div class="hero-background"></div>
+      <div class="container hero-content-wrapper">
+        <div class="hero-text">
+          <span class="eyebrow">Our People</span>
+          <h1>Meet the experts driving development across Africa</h1>
+          <p>
+            ADC Rwanda's multidisciplinary team brings together deep expertise in development finance,
+            private sector development, agriculture, energy, youth entrepreneurship, and impact measurement.
+          </p>
+          <div class="hero-cta">
+            <a href="#team" class="btn btn-primary">Meet the Team</a>
+            <a href="contact.html" class="btn btn-secondary">Work With Us</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Team Members</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Years Combined Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Specializations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Overview -->
+    <section class="staff-overview">
+      <div class="container">
+        <h2 class="section-title">Our Leadership Team</h2>
+        <p class="section-subtitle">Experienced professionals committed to sustainable development</p>
+        
+        <div class="staff-nav">
+          <button class="staff-nav-btn active" data-department="all">All Team</button>
+          <button class="staff-nav-btn" data-department="leadership">Leadership</button>
+          <button class="staff-nav-btn" data-department="sector">Sector Leads</button>
+          <button class="staff-nav-btn" data-department="advisory">Advisory</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff Grid -->
+    <section class="staff-content" id="team">
+      <div class="container">
+        <div class="staff-grid">
+        
+        <!-- Leadership -->
+       <div class="staff-member-card" data-department="leadership">
+  <div class="member-image-wrapper">
+    <img src="STAFF PHOTOS/Rebecca.jpg" alt="Rebecca Ruzibuka" class="member-image" />
+
+    <div class="member-overlay">
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn">
+          <svg width="20" height="20" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="member-info">
+    <h3 class="member-name">Rebecca RUZIBUKA</h3>
+    <div class="member-title">Managing Director</div>
+
+    <p class="member-bio">
+      Rebecca Ruzibuka has 40 years of experience spanning academia and consultancy.
+    </p>
+
+    <div class="member-expertise">
+      <span class="expertise-label">Expertise</span>
+      <div class="expertise-tags">
+        <span class="tag">Private Sector & Agricultural Development</span>
+        <span class="tag">Business Development Services (BDS)</span>
+        <span class="tag">Donor-Funded Project Management</span>
+        <span class="tag">Cooperative & Value Chain Development</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT FOOTER -->
+  <div class="member-contacts">
+    <a href="tel:+250788123456" class="contact-item">
+      <svg width="40" height="25" fill="darkblue" viewBox="0 0 24 24">
+        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.3 21.01 3 13.7 3 4.99a1 1 0 011-1H7.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.21z"/>
+      </svg>
+      <span>+250 788 123 456</span>
+    </a>
+<br>
+    <a href="mailto:rebecca@yourcompany.com" class="contact-item">
+      <svg width="40" height="25" fill="darkblue" viewBox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+      <span>rebecca@yourcompany.com</span>
+    </a>
+  </div>
+</div>
+
+
+        <div class="staff-member-card" data-department="sector">
+          <div class="member-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Benoit Kabera" class="member-image" />
+            <div class="member-overlay">
+              <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="#" aria-label="Email"><svg width="20" height="20" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Benoit Kabera</h3>
+            <div class="member-title">Director, Agriculture & Livestock</div>
+            <div class="member-department">Sector Lead</div>
+            <p class="member-bio">
+              Benoit specializes in climate-smart agriculture, cooperative development, and rural finance, 
+              helping farming communities build resilient and profitable agribusinesses.
+            </p>
+            <div class="member-expertise">
+              <span class="expertise-label">Expertise:</span>
+              <div class="expertise-tags">
+                <span class="tag">Climate-Smart Agriculture</span>
+                <span class="tag">Cooperative Development</span>
+                <span class="tag">Rural Finance</span>
+              </div>
+            </div>
+            <button class="member-cta">View Full Profile →</button>
+          </div>
+        </div>
+
+        <div class="staff-member-card" data-department="sector">
+          <div class="member-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" alt="Clarisse Mukamana" class="member-image" />
+            <div class="member-overlay">
+              <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="#" aria-label="Email"><svg width="20" height="20" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Clarisse Mukamana</h3>
+            <div class="member-title">Director, Youth Entrepreneurship</div>
+            <div class="member-department">Sector Lead</div>
+            <p class="member-bio">
+              Clarisse drives youth entrepreneurship initiatives, focusing on MSME development, 
+              incubation programs, and building vibrant entrepreneurial ecosystems.
+            </p>
+            <div class="member-expertise">
+              <span class="expertise-label">Expertise:</span>
+              <div class="expertise-tags">
+                <span class="tag">MSME Development</span>
+                <span class="tag">Incubation & Acceleration</span>
+                <span class="tag">Ecosystem Building</span>
+              </div>
+            </div>
+            <button class="member-cta">View Full Profile →</button>
+          </div>
+        </div>
+
+        <div class="staff-member-card" data-department="sector">
+          <div class="member-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="David Niyonsenga" class="member-image" />
+            <div class="member-overlay">
+              <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="#" aria-label="Email"><svg width="20" height="20" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">David Niyonsenga</h3>
+            <div class="member-title">Lead, Renewable Energy</div>
+            <div class="member-department">Sector Lead</div>
+            <p class="member-bio">
+              David brings expertise in renewable energy projects, specializing in mini-grids, 
+              off-grid solar solutions, and energy policy advisory for sustainable development.
+            </p>
+            <div class="member-expertise">
+              <span class="expertise-label">Expertise:</span>
+              <div class="expertise-tags">
+                <span class="tag">Mini-grids</span>
+                <span class="tag">Off-grid Solar</span>
+                <span class="tag">Policy Advisory</span>
+              </div>
+            </div>
+            <button class="member-cta">View Full Profile →</button>
+          </div>
+        </div>
+
+        <div class="staff-member-card" data-department="advisory">
+          <div class="member-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Esther Kamanzi" class="member-image" />
+            <div class="member-overlay">
+              <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="#" aria-label="Email"><svg width="20" height="20" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Esther Kamanzi</h3>
+            <div class="member-title">Lead, Monitoring & Evaluation</div>
+            <div class="member-department">Advisory</div>
+            <p class="member-bio">
+              Esther designs and implements M&E systems that drive learning and accountability, 
+              helping development programs measure and maximize their impact.
+            </p>
+            <div class="member-expertise">
+              <span class="expertise-label">Expertise:</span>
+              <div class="expertise-tags">
+                <span class="tag">Results Frameworks</span>
+                <span class="tag">Data Systems</span>
+                <span class="tag">Impact Measurement</span>
+              </div>
+            </div>
+            <button class="member-cta">View Full Profile →</button>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="staff-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Join Our Team</h2>
+          <p>We're always looking for talented professionals passionate about development</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-large">View Open Positions</a>
+            <a href="contact.html" class="btn btn-outline-light">Send Your CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>ADC Rwanda</h3>
+        <p>African Development Consultant Rwanda is a development consulting organization providing
+          business advisory and capacity building services across Africa.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Kigali, Rwanda</li>
+          <li>Phone: +250 000 000 000</li>
+          <li>Email: info@adcrwanda.org</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> African Development Consultant (ADC) Rwanda. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    navToggle?.addEventListener('click', () => {
+      siteNav.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+
+    const themeToggle = document.getElementById('themeToggle');
+    const storedTheme = localStorage.getItem('adc-theme');
+    if (storedTheme === 'dark') document.documentElement.classList.add('dark');
+    themeToggle?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      localStorage.setItem('adc-theme', isDark ? 'dark' : 'light');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Department filter
+    const navBtns = document.querySelectorAll('.staff-nav-btn');
+    const staffCards = document.querySelectorAll('.staff-member-card');
+
+    navBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const department = btn.dataset.department;
+        
+        navBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        staffCards.forEach(card => {
+          if (department === 'all') {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = card.dataset.department === department ? 'flex' : 'none';
+          }
+        });
+      });
+    });
+
+    // Smooth scroll for hero CTA
+    document.querySelector('.btn-primary')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Profile button interaction
+    document.querySelectorAll('.member-cta').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const memberName = e.target.closest('.staff-member-card').querySelector('.member-name').textContent;
+        alert(`Full profile for ${memberName} - Coming soon!`);
+      });
+    });
+  </script>
+</body>
+</html>

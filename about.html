@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About ADC Rwanda</title>
+ 
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <!-- Header: same structure as index, but About active -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="ADC Rwanda logo" class="brand-logo" />
+        <span class="brand-text">
+          <span class="brand-name">ADC Rwanda</span>
+          <span class="brand-tagline">African Development Consultant</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="about.html" class="active">About</a>
+            <ul class="dropdown">
+              <li><a href="staff.html">Staff</a></li>
+              <li><a href="board.html">Board Members</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline" onclick="location.href='contact.html#consultation'">Get Consultation</button>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">&#9788;</button>
+      </div>
+    </div>
+  </header>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero" id="home">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: linear-gradient(rgba(15, 76, 129, 0.7), rgba(33, 150, 243, 0.7)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200');">
+                <div class="slide-overlay">
+                    <div class="hero-content">
+                        <h1>About Us</h1>
+                        <p>Driving sustainable growth and impact across Africa</p>
+                        <a href="#contact" class="cta-button">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(15, 76, 129, 0.7), rgba(33, 150, 243, 0.7)), url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200');">
+                <div class="slide-overlay">
+                    <div class="hero-content">
+                        <h1>Empowering Africa</h1>
+                        <p>Strategic consulting for sustainable development</p>
+                        <a href="#contact" class="cta-button">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(15, 76, 129, 0.7), rgba(33, 150, 243, 0.7)), url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200');">
+                <div class="slide-overlay">
+                    <div class="hero-content">
+                        <h1>Building Prosperity</h1>
+                        <p>Creating inclusive growth for African communities</p>
+                        <a href="#contact" class="cta-button">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <p class="section-subtitle">Building bridges between global standards and African realities</p>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>Founded in Rwanda, ADC Rwanda was established to bridge the gap between global development standards and the realities of African markets. Our multidisciplinary team brings experience from international organizations, financial institutions, and local enterprises.</p>
+                    <br>
+                    <p>We understand the unique challenges and opportunities that define the African business landscape, and we're committed to providing practical, impactful solutions that drive real change.</p>
+                </div>
+                <div class="story-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="vision-mission">
+        <div class="container">
+            <h2 class="section-title">Vision & Mission</h2>
+            <div class="vm-grid">
+                <div class="vm-card">
+                    <h3><span class="vm-icon">🎯</span> Our Vision</h3>
+                    <p>A resilient and competitive African private sector that creates inclusive prosperity for communities across the continent.</p>
+                </div>
+                <div class="vm-card">
+                    <h3><span class="vm-icon">🚀</span> Our Mission</h3>
+                    <p>To empower African businesses and institutions with world-class advisory, practical tools, and capacity building that translate into measurable impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <p class="section-subtitle">The principles that guide everything we do</p>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Integrity</h3>
+                    <p>Honest and ethical in all our dealings</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Partnership</h3>
+                    <p>Collaborative relationships built on trust</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⭐</div>
+                    <h3>Excellence</h3>
+                    <p>Committed to the highest quality</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <h3>Inclusivity</h3>
+                    <p>Creating opportunities for all</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">📚</div>
+                    <h3>Learning</h3>
+                    <p>Continuous growth and improvement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Impact -->
+    <section class="impact">
+        <div class="container">
+            <h2 class="section-title">Our Impact</h2>
+            <p class="section-subtitle">Making a difference across Africa</p>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h3>Youth Entrepreneurship</h3>
+                    <ul>
+                        <li>Design and implementation of multi-country youth entrepreneurship programs</li>
+                        <li>Thousands of young entrepreneurs supported</li>
+                        <li>Creating sustainable livelihoods</li>
+                    </ul>
+                </div>
+                <div class="impact-card">
+                    <h3>Agriculture & Value Chains</h3>
+                    <ul>
+                        <li>Strengthening agriculture value chains and cooperatives</li>
+                        <li>Improving farmer incomes and market access</li>
+                        <li>Building resilient food systems</li>
+                    </ul>
+                </div>
+                <div class="impact-card">
+                    <h3>Climate & Energy</h3>
+                    <ul>
+                        <li>Supporting renewable energy initiatives</li>
+                        <li>Climate-resilient business models</li>
+                        <li>Sustainable development solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer and scripts same as index -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>ADC Rwanda</h3>
+        <p>African Development Consultant Rwanda is a development consulting organization providing
+          business advisory and capacity building services across Africa.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Kigali, Rwanda</li>
+          <li>Phone: +250 000 000 000</li>
+          <li>Email: info@adcrwanda.org</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> African Development Consultant (ADC) Rwanda. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    navToggle?.addEventListener('click', () => {
+      siteNav.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+
+    const themeToggle = document.getElementById('themeToggle');
+    const storedTheme = localStorage.getItem('adc-theme');
+    if (storedTheme === 'dark') document.documentElement.classList.add('dark');
+    themeToggle?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      localStorage.setItem('adc-theme', isDark ? 'dark' : 'light');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+  </script>
+</body>
+</html>

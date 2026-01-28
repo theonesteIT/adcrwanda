@@ -1,0 +1,482 @@
+:root {
+      --color-bg: #ffffff;
+      --color-surface: #ffffff;
+      --color-primary: #0066FF;
+      --color-primary-soft: #E6F0FF;
+      --color-primary-dark: #0052CC;
+      --color-text: #0A0E27;
+      --color-text-soft: #64748B;
+      --color-border: #E2E8F0;
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      
+      --shadow-soft: 0 1px 3px rgba(0, 102, 255, 0.08), 0 8px 24px rgba(0, 102, 255, 0.04);
+      --shadow-strong: 0 4px 6px rgba(0, 102, 255, 0.1), 0 20px 40px rgba(0, 102, 255, 0.08);
+      
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1400px, 100% - 2rem);
+      margin-inline: auto;
+    }
+
+    /* Expertise Section - Split Layout */
+    .expertise-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #F8FAFB 0%, #FFFFFF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .expertise-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      min-height: 700px;
+    }
+
+    /* Left Side - Image Slideshow */
+    .expertise-slideshow {
+      position: relative;
+      height: 700px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-strong);
+    }
+
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Gradient overlay */
+    .slide::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0, 102, 255, 0.2) 0%, rgba(0, 82, 204, 0.4) 100%);
+    }
+
+    /* Slide content */
+    .slide-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 3rem;
+      z-index: 2;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+      color: white;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.6s ease;
+    }
+
+    .slide.active .slide-content {
+      transform: translateY(0);
+      opacity: 1;
+      transition-delay: 0.3s;
+    }
+
+    .slide-content h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .slide-content p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    /* Slide indicators */
+    .slide-indicators {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 3;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .indicator.active {
+      background: white;
+      transform: scale(1.2);
+      border-color: var(--color-primary);
+    }
+
+    .indicator:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Navigation arrows */
+    .slide-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      display: flex;
+      gap: 1rem;
+      left: 2rem;
+    }
+
+    .slide-arrow {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .slide-arrow:hover {
+      background: white;
+      transform: scale(1.1);
+    }
+
+    /* Right Side - Expertise Content */
+    .expertise-content-wrapper {
+      padding: 2rem 0;
+    }
+
+    .expertise-header {
+      margin-bottom: 3rem;
+    }
+
+    .expertise-header .eyebrow {
+      display: inline-block;
+      padding: 0.5rem 1.25rem;
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .expertise-header h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .expertise-header h2 .gradient-text {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .expertise-header p {
+      font-size: 1.15rem;
+      color: var(--color-text-soft);
+      line-height: 1.7;
+      max-width: 90%;
+    }
+
+    /* Expertise List */
+    .expertise-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .expertise-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--color-border);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .expertise-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--color-primary);
+      transform: scaleY(0);
+      transition: transform 0.3s ease;
+    }
+
+    .expertise-item:hover {
+      border-color: var(--color-primary);
+      transform: translateX(8px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .expertise-item:hover::before {
+      transform: scaleY(1);
+    }
+
+    .expertise-icon {
+      width: 56px;
+      height: 56px;
+      min-width: 56px;
+      background: var(--color-primary-soft);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .expertise-item:hover .expertise-icon {
+      background: var(--color-primary);
+      transform: rotate(5deg) scale(1.05);
+    }
+
+    .expertise-text h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--color-text);
+      transition: color 0.3s ease;
+    }
+
+    .expertise-item:hover .expertise-text h3 {
+      color: var(--color-primary);
+    }
+
+    .expertise-text p {
+      font-size: 0.95rem;
+      color: var(--color-text-soft);
+      line-height: 1.6;
+    }
+
+    /* CTA Button */
+    .expertise-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 102, 255, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 102, 255, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--color-primary-soft);
+      transform: translateY(-2px);
+    }
+
+    /* Scroll Animation */
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .expertise-item {
+      animation: fadeInRight 0.6s ease-out forwards;
+      opacity: 0;
+    }
+
+    .expertise-item:nth-child(1) { animation-delay: 0.1s; }
+    .expertise-item:nth-child(2) { animation-delay: 0.2s; }
+    .expertise-item:nth-child(3) { animation-delay: 0.3s; }
+    .expertise-item:nth-child(4) { animation-delay: 0.4s; }
+    .expertise-item:nth-child(5) { animation-delay: 0.5s; }
+    .expertise-item:nth-child(6) { animation-delay: 0.6s; }
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .expertise-split {
+        gap: 3rem;
+      }
+
+      .expertise-slideshow {
+        height: 600px;
+      }
+
+      .expertise-header h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 968px) {
+      .expertise-section {
+        padding: 4rem 0;
+      }
+
+      .expertise-split {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .expertise-slideshow {
+        height: 500px;
+      }
+
+      .slide-content h3 {
+        font-size: 1.75rem;
+      }
+
+      .slide-content p {
+        font-size: 1rem;
+      }
+
+      .expertise-header h2 {
+        font-size: 2.25rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .expertise-slideshow {
+        height: 400px;
+      }
+
+      .slide-content {
+        padding: 2rem;
+      }
+
+      .slide-content h3 {
+        font-size: 1.5rem;
+      }
+
+      .slide-nav {
+        left: 1rem;
+      }
+
+      .slide-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+
+      .slide-indicators {
+        bottom: 1.5rem;
+        right: 1.5rem;
+      }
+
+      .expertise-header h2 {
+        font-size: 2rem;
+      }
+
+      .expertise-header p {
+        font-size: 1rem;
+      }
+
+      .expertise-item {
+        padding: 1.25rem;
+      }
+
+      .expertise-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 1.25rem;
+      }
+
+      .expertise-text h3 {
+        font-size: 1.1rem;
+      }
+
+      .expertise-text p {
+        font-size: 0.9rem;
+      }
+
+      .btn {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.95rem;
+      }
+    }
