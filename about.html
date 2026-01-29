@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About ADC Rwanda</title>
- 
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="about.css">
 </head>
 <body>
-  <!-- Header: same structure as index, but About active -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
@@ -46,147 +46,342 @@
     </div>
   </header>
 
-    <!-- Hero Section with Slideshow -->
-    <section class="hero" id="home">
-        <div class="slideshow">
-            <div class="slide active" style="background-image: linear-gradient(rgba(15, 76, 129, 0.7), rgba(33, 150, 243, 0.7)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200');">
-                <div class="slide-overlay">
-                    <div class="hero-content">
-                        <h1>About Us</h1>
-                        <p>Driving sustainable growth and impact across Africa</p>
-                        <a href="#contact" class="cta-button">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" style="background-image: linear-gradient(rgba(15, 76, 129, 0.7), rgba(33, 150, 243, 0.7)), url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200');">
-                <div class="slide-overlay">
-                    <div class="hero-content">
-                        <h1>Empowering Africa</h1>
-                        <p>Strategic consulting for sustainable development</p>
-                        <a href="#contact" class="cta-button">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" style="background-image: linear-gradient(rgba(15, 76, 129, 0.7), rgba(33, 150, 243, 0.7)), url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200');">
-                <div class="slide-overlay">
-                    <div class="hero-content">
-                        <h1>Building Prosperity</h1>
-                        <p>Creating inclusive growth for African communities</p>
-                        <a href="#contact" class="cta-button">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-dots">
-                <span class="dot active" onclick="currentSlide(0)"></span>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-            </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="services-hero">
+      <div class="hero-background"></div>
+      <div class="container hero-content-wrapper">
+        <div class="hero-text">
+          <span class="eyebrow">About Us</span>
+          <h1>Driving sustainable growth and impact across Africa</h1>
+          <p>
+            Building bridges between global standards and African realities through expertise, 
+            partnership, and commitment to excellence.
+          </p>
+          <div class="hero-cta">
+            <a href="#about-content" class="btn btn-primary">Learn More</a>
+            <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+          </div>
         </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">12+</div>
+            <div class="stat-label">African Countries</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Our Story -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">Our Story</h2>
-            <p class="section-subtitle">Building bridges between global standards and African realities</p>
-            <div class="story-content">
-                <div class="story-text">
-                    <p>Founded in Rwanda, ADC Rwanda was established to bridge the gap between global development standards and the realities of African markets. Our multidisciplinary team brings experience from international organizations, financial institutions, and local enterprises.</p>
-                    <br>
-                    <p>We understand the unique challenges and opportunities that define the African business landscape, and we're committed to providing practical, impactful solutions that drive real change.</p>
-                </div>
-                <div class="story-image"></div>
-            </div>
+    <!-- About Overview -->
+    <section class="services-overview">
+      <div class="container">
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-subtitle">A multidisciplinary team committed to Africa's development</p>
+        
+        <div class="services-nav">
+          <button class="service-nav-btn active" data-category="all">Overview</button>
+          <button class="service-nav-btn" data-category="story">Our Story</button>
+          <button class="service-nav-btn" data-category="vision">Vision & Mission</button>
+          <button class="service-nav-btn" data-category="values">Values</button>
+          <button class="service-nav-btn" data-category="impact">Impact</button>
         </div>
+      </div>
     </section>
 
-    <!-- Vision & Mission -->
-    <section class="vision-mission">
-        <div class="container">
-            <h2 class="section-title">Vision & Mission</h2>
-            <div class="vm-grid">
-                <div class="vm-card">
-                    <h3><span class="vm-icon">🎯</span> Our Vision</h3>
-                    <p>A resilient and competitive African private sector that creates inclusive prosperity for communities across the continent.</p>
-                </div>
-                <div class="vm-card">
-                    <h3><span class="vm-icon">🚀</span> Our Mission</h3>
-                    <p>To empower African businesses and institutions with world-class advisory, practical tools, and capacity building that translate into measurable impact.</p>
-                </div>
+    <!-- About Content -->
+    <section class="services-content" id="about-content">
+      <div class="container">
+        
+        <!-- Our Story -->
+        <div class="service-category" data-category="story">
+          <div class="category-header">
+            <div class="category-icon">📖</div>
+            <div>
+              <h2>Our Story</h2>
+              <p>How we began our journey to transform African businesses and communities</p>
             </div>
+          </div>
+          
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon">🏢</div>
+              <h3>Founded in Rwanda</h3>
+              <p>
+                ADC Rwanda was established to bridge the gap between global development standards 
+                and the realities of African markets. Our headquarters in Kigali serves as a hub 
+                for development excellence across the continent.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Our Foundation</span>
+                <p>Deep understanding of African business landscape</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">👥</div>
+              <h3>Multidisciplinary Expertise</h3>
+              <p>
+                Our team brings together experience from international organizations, financial 
+                institutions, and local enterprises, creating a unique blend of global expertise 
+                and local insight.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Our Strength</span>
+                <p>Diverse perspectives for comprehensive solutions</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🎯</div>
+              <h3>Practical Impact</h3>
+              <p>
+                We understand the unique challenges and opportunities that define the African 
+                business landscape, and we're committed to providing practical, impactful 
+                solutions that drive real change.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Our Approach</span>
+                <p>Solutions tailored to African realities</p>
+              </div>
+            </article>
+          </div>
         </div>
+
+        <!-- Vision & Mission -->
+        <div class="service-category" data-category="vision">
+          <div class="category-header">
+            <div class="category-icon">🚀</div>
+            <div>
+              <h2>Vision & Mission</h2>
+              <p>Our aspirations and commitments to Africa's sustainable development</p>
+            </div>
+          </div>
+          
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon">🎯</div>
+              <h3>Our Vision</h3>
+              <p>
+                A resilient and competitive African private sector that creates inclusive 
+                prosperity for communities across the continent.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">We Envision</span>
+                <p>Thriving African economies and empowered communities</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">💡</div>
+              <h3>Our Mission</h3>
+              <p>
+                To empower African businesses and institutions with world-class advisory, 
+                practical tools, and capacity building that translate into measurable impact.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">We Deliver</span>
+                <p>Actionable expertise with lasting results</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Our Values -->
+        <div class="service-category" data-category="values">
+          <div class="category-header">
+            <div class="category-icon">⭐</div>
+            <div>
+              <h2>Our Values</h2>
+              <p>The principles that guide everything we do and define who we are</p>
+            </div>
+          </div>
+          
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon">🎯</div>
+              <h3>Integrity</h3>
+              <p>
+                We maintain the highest ethical standards in all our dealings, building trust 
+                through transparency and honesty in every engagement.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Our Promise</span>
+                <p>Honest and ethical in all our dealings</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🤝</div>
+              <h3>Partnership</h3>
+              <p>
+                We build collaborative relationships founded on mutual respect and trust, working 
+                alongside our clients as true partners in their success.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Our Approach</span>
+                <p>Collaborative relationships built on trust</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">⭐</div>
+              <h3>Excellence</h3>
+              <p>
+                We are committed to delivering the highest quality in every project, continuously 
+                pushing ourselves to exceed expectations and set new standards.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Our Standard</span>
+                <p>Committed to the highest quality</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🌍</div>
+              <h3>Inclusivity</h3>
+              <p>
+                We believe in creating opportunities for all, ensuring our work benefits diverse 
+                communities and promotes equitable development across Africa.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Our Commitment</span>
+                <p>Creating opportunities for all</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">📚</div>
+              <h3>Learning</h3>
+              <p>
+                We embrace continuous growth and improvement, staying curious and adapting to new 
+                challenges with innovative solutions and fresh perspectives.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Our Culture</span>
+                <p>Continuous growth and improvement</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Our Impact -->
+        <div class="service-category" data-category="impact">
+          <div class="category-header">
+            <div class="category-icon">📈</div>
+            <div>
+              <h2>Our Impact</h2>
+              <p>Making a measurable difference across Africa through strategic interventions</p>
+            </div>
+          </div>
+          
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon">💼</div>
+              <h3>Youth Entrepreneurship</h3>
+              <p>
+                Design and implementation of multi-country youth entrepreneurship programs that 
+                have supported thousands of young entrepreneurs in creating sustainable livelihoods.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Impact Area</span>
+                <p>Empowering the next generation of African business leaders</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🌾</div>
+              <h3>Agriculture & Value Chains</h3>
+              <p>
+                Strengthening agriculture value chains and cooperatives to improve farmer incomes, 
+                enhance market access, and build resilient food systems across the continent.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Impact Area</span>
+                <p>Transforming agricultural productivity and livelihoods</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🌱</div>
+              <h3>Climate & Energy</h3>
+              <p>
+                Supporting renewable energy initiatives and developing climate-resilient business 
+                models that drive sustainable development while protecting our environment.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Impact Area</span>
+                <p>Building sustainable futures for African communities</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🏗️</div>
+              <h3>Business Development</h3>
+              <p>
+                Helping businesses establish, grow, and scale operations across Africa through 
+                strategic advisory, capacity building, and access to markets and finance.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Impact Area</span>
+                <p>Strengthening Africa's private sector ecosystem</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">📊</div>
+              <h3>Institutional Capacity</h3>
+              <p>
+                Building the capabilities of cooperatives, business support organizations, and 
+                public agencies to better serve their communities and stakeholders.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Impact Area</span>
+                <p>Creating sustainable institutions that deliver</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🤝</div>
+              <h3>Strategic Partnerships</h3>
+              <p>
+                Facilitating connections between African businesses, international investors, 
+                development partners, and government agencies to create opportunities for growth.
+              </p>
+              <div class="service-benefit">
+                <span class="benefit-label">Impact Area</span>
+                <p>Bridging gaps and building networks for success</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Values -->
-    <section>
-        <div class="container">
-            <h2 class="section-title">Our Values</h2>
-            <p class="section-subtitle">The principles that guide everything we do</p>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">🎯</div>
-                    <h3>Integrity</h3>
-                    <p>Honest and ethical in all our dealings</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">🤝</div>
-                    <h3>Partnership</h3>
-                    <p>Collaborative relationships built on trust</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">⭐</div>
-                    <h3>Excellence</h3>
-                    <p>Committed to the highest quality</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">🌍</div>
-                    <h3>Inclusivity</h3>
-                    <p>Creating opportunities for all</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">📚</div>
-                    <h3>Learning</h3>
-                    <p>Continuous growth and improvement</p>
-                </div>
-            </div>
+    <!-- CTA Section -->
+    <section class="services-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Partner With Us</h2>
+          <p>Let's work together to create lasting impact across Africa</p>
+          <div class="cta-buttons">
+            <a href="contact.html#consultation" class="btn btn-large">Schedule a Consultation</a>
+            <a href="services.html" class="btn btn-outline-light">Explore Our Services</a>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Our Impact -->
-    <section class="impact">
-        <div class="container">
-            <h2 class="section-title">Our Impact</h2>
-            <p class="section-subtitle">Making a difference across Africa</p>
-            <div class="impact-grid">
-                <div class="impact-card">
-                    <h3>Youth Entrepreneurship</h3>
-                    <ul>
-                        <li>Design and implementation of multi-country youth entrepreneurship programs</li>
-                        <li>Thousands of young entrepreneurs supported</li>
-                        <li>Creating sustainable livelihoods</li>
-                    </ul>
-                </div>
-                <div class="impact-card">
-                    <h3>Agriculture & Value Chains</h3>
-                    <ul>
-                        <li>Strengthening agriculture value chains and cooperatives</li>
-                        <li>Improving farmer incomes and market access</li>
-                        <li>Building resilient food systems</li>
-                    </ul>
-                </div>
-                <div class="impact-card">
-                    <h3>Climate & Energy</h3>
-                    <ul>
-                        <li>Supporting renewable energy initiatives</li>
-                        <li>Climate-resilient business models</li>
-                        <li>Sustainable development solutions</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <!-- Footer and scripts same as index -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
@@ -225,6 +420,7 @@
   </footer>
 
   <script>
+    // Navigation toggle
     const navToggle = document.querySelector('.nav-toggle');
     const siteNav = document.querySelector('.site-nav');
     navToggle?.addEventListener('click', () => {
@@ -232,6 +428,7 @@
       navToggle.classList.toggle('open');
     });
 
+    // Theme toggle
     const themeToggle = document.getElementById('themeToggle');
     const storedTheme = localStorage.getItem('adc-theme');
     if (storedTheme === 'dark') document.documentElement.classList.add('dark');
@@ -241,8 +438,37 @@
       localStorage.setItem('adc-theme', isDark ? 'dark' : 'light');
     });
 
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-    
+
+    // Category filter
+    const navBtns = document.querySelectorAll('.service-nav-btn');
+    const categories = document.querySelectorAll('.service-category');
+
+    navBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const category = btn.dataset.category;
+        
+        // Update active button
+        navBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Filter categories
+        categories.forEach(cat => {
+          if (category === 'all') {
+            cat.style.display = 'block';
+          } else {
+            cat.style.display = cat.dataset.category === category ? 'block' : 'none';
+          }
+        });
+      });
+    });
+
+    // Smooth scroll for hero CTA
+    document.querySelector('.btn-primary')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector('#about-content').scrollIntoView({ behavior: 'smooth' });
+    });
   </script>
 </body>
 </html>
