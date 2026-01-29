@@ -238,44 +238,49 @@
         <div class="services-grid">
           <div class="service-preview-card">
             <div class="service-icon">🏢</div>
+            <div class="badge-number">1</div>
             <h3>Business Establishment</h3>
             <p>Registration, compliance, and market entry strategies for new ventures</p>
-            <a href="services.html" class="service-link">Learn more →</a>
+            <a href="services.html#business-category" class="service-link">Learn more →</a>
           </div>
-          
           <div class="service-preview-card">
-            <div class="service-icon">📊</div>
+            <div class="service-icon">💰</div>
+            <div class="badge-number">2</div>
             <h3>Financial Management</h3>
-            <p>Financial planning, tax advisory, and investment readiness support</p>
-            <a href="services.html" class="service-link">Learn more →</a>
+            <p>Accounting systems, tax advisory, and financial reporting solutions</p>
+            <a href="services.html#financial-category" class="service-link">Learn more →</a>
           </div>
 
           <div class="service-preview-card">
             <div class="service-icon">⚙️</div>
+            <div class="badge-number">3</div>
             <h3>Operations Excellence</h3>
             <p>Process optimization, supply chain design, and performance management</p>
-            <a href="services.html" class="service-link">Learn more →</a>
+            <a href="services.html#operations-category" class="service-link">Learn more →</a>
           </div>
 
           <div class="service-preview-card">
             <div class="service-icon">🌍</div>
+            <div class="badge-number">4</div>
             <h3>Market Development</h3>
             <p>Export readiness, market linkages, and go-to-market strategies</p>
-            <a href="services.html" class="service-link">Learn more →</a>
+            <a href="services.html#market-category" class="service-link">Learn more →</a>
           </div>
 
           <div class="service-preview-card">
             <div class="service-icon">📈</div>
+            <div class="badge-number">5</div>
             <h3>Monitoring & Evaluation</h3>
             <p>Results frameworks, evaluations, and learning systems</p>
-            <a href="services.html" class="service-link">Learn more →</a>
+            <a href="services.html#impact-category" class="service-link">Learn more →</a>
           </div>
 
           <div class="service-preview-card">
             <div class="service-icon">📚</div>
+            <div class="badge-number">6</div>
             <h3>Capacity Building</h3>
             <p>Tailored training, coaching, and institutional strengthening</p>
-            <a href="services.html" class="service-link">Learn more →</a>
+            <a href="services.html#capacity-category" class="service-link">Learn more →</a>
           </div>
         </div>
 
@@ -283,6 +288,44 @@
           <a href="services.html" class="btn btn-primary">View All Services</a>
         </div>
       </div>
+
+      <style>
+        .badge-number {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          background-color: darkblue;
+          color: white;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 16px;
+          animation: pulse 2s infinite;
+          visibility: visible !important;
+          opacity: 1 !important;
+        }
+
+        @keyframes pulse {
+
+          0% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 lightblue;
+          }
+          70% {
+            transform: scale(1.1);
+            box-shadow: 0 0 0 10px rgba(255, 111, 97, 0);
+          }
+          100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(255, 111, 97, 0);
+          }
+          
+        }
+      </style>
     </section>
 
     <!-- Featured Projects -->
